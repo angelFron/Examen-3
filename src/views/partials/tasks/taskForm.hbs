@@ -1,0 +1,27 @@
+<div class="card card-body p-4 rounded-10 bg-purple text-white">
+
+    <h3>Canciones</h3><br>
+
+    <form action="/tasks/add" method="post">
+
+    <div>
+        <label for="title">Escribe el nombre de una cancion:</label>
+
+        <input type="text" name="title" placeholder="Cancion" id="title" class="form-control rounded-10 bg-purpleclear ">
+    </div><br>
+
+    <div>
+        <label for="description">Escriba el Genero/Artista:</label>
+    
+        <textarea 
+            name="description" 
+            placeholder="Genero/Artista" 
+            id="description"
+            class="form-control rounded-10 bg-purpleclear "
+        ></textarea>
+    </div><br>
+
+    <button class="btn btn-purpledark btn-sm mt-2 text-white btn-center">Agregar</button>
+
+</form>
+</div>
