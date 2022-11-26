@@ -1,0 +1,29 @@
+<table class="table table-bordered table-hover table-purple text-center text-white">
+    <thead>
+        <tr>
+            <th>N°</th>
+            <th>Cancion</th>
+            <th>Genero/Artista</th>
+            <th>Operacion</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each tasks}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{title}}</td>
+            <td>{{description}}</td>
+            <td>
+                {{#if done}}
+                    <a href="/toggleDone/{{_id}}" class="btn btn-light"></a>
+                {{else}}
+                    <a href="/toggleDone/{{_id}}" class="btn btn-success"></a>
+                {{/if}}
+                <a href="/edit/{{_id}}" class="btn btn-light">Actualizar</a>
+                <a href="/delete/{{_id}}" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
